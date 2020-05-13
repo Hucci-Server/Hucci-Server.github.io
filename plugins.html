@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Hucci [Plugins]</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geo">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif}
+.w3-bar,h1,button {font-family: "Geo", sans-serif}
+.fa-coffee,.fa-angle-double-up {font-size:200px}
+
+/* Create a Parallax Effect */
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('11.png');
+  min-height: 100%;
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Gallery</a>
+    <a href="plugins.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Plugins</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.hmtl" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+    <a href="plugins.html" class="w3-bar-item w3-button w3-padding-large">Plugins</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bgimg-1 w3-container w3-brown w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Plugins</h1>
+  <p class="w3-xlarge">List of plugins currently installed on the server</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>EssentialsX</h1>
+      <h5 class="w3-padding-32">EssentialsX is a massive plugin that adds much more depth to the default minecraft experience. Some funcitonality includes: The ability to set a home which can be accessed at any time, a functinal economy, unique titles and permissions, etc... For an extensive explanation of functionality, <a href="https://github.com/EssentialsX/Essentials/wiki">click here</a></h5>
+
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="EssentialsX.png">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="AH.png">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Action Health</h1>
+      <h5 class="w3-padding-32">Action health is a simple plugin that adds functional health bars for mobs. or an extensive explanation of functionality, <a href="https://www.spigotmc.org/resources/action-bar-health.2661/?__cf_chl_jschl_tk__=e1ce6c1b357bebbc11f867720bc5bb98eb9aa7e9-1589395352-0-AQQekYhSnRianWwdRv3cinWfo_aeS1h3ARYY7iSlFsVlJSZZ9GM3rR4lxDh3WQyOyDeUrg_o9Ch2hWLrsCd6cZbS12wjk4tU7fUburc5Xe2ooCTNKrw4ycdJe5IF6ZpSaHnZPpTwxJK10GULHD8ixQF00IWpVAHMvZXT4b0EmCeXa7h0sxHgGE6V2TKQvc_KmQFoNNvrE5lP_gtV82Zar14GLx0HZ3OdwcNy0YxJQKdaZH8ptPUQ9aZYjXnagBhwhCojje_ZM0rp7saboADGjqJcl3bZ5LZizGW96t4ZrpT-2IB3m9RDhx6aiK8vmgC2kQ">click here</a></h5>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">IP: 51.79.76.104:40461</h1>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
